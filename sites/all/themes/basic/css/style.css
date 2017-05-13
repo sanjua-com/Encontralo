@@ -428,6 +428,11 @@ body {
   width: 100%;
   height: 60px;
 }
+
+.fullscreen-bg__video {
+  width: 100%;
+}
+
 #page header .container {
   margin-left: auto;
   margin-right:  auto;
@@ -507,6 +512,7 @@ body {
   border-radius: 3px;
   color: #ffffff;
 }
+
 #main {
   clear: both;
 }
@@ -710,14 +716,11 @@ body {
   text-align: 50%;
   height: 45px;
 }
-#footer .container #block-1 p {
+#footer .container p {
   clear: both;
   line-height: 45px;
   margin: 0 0 0 50px;
   font-size: 13px;
-}
-#footer .container #block-1 .block {
-  float: left;
 }
 
 /*desde aca estan los codigos de los productos*/
