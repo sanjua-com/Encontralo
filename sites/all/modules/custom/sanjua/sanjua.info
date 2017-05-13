@@ -1,0 +1,5 @@
+name = Sanjua Settings
+description = "Module for to change general settings."
+core = 7.x
+version = 7.1
+package = Custom Sanjua
