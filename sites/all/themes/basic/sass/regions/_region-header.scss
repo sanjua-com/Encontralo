@@ -9,15 +9,12 @@ header#header {
     max-width: 93%;
 
     img {
-      border: 1px solid white;
       border-radius: 50px;
     }
 
     #logo {
       float: left;
       margin: 13px 20px 10px 0;
-      width: 40px;
-      height: 40px;
     }
 
     #site-name {
@@ -32,14 +29,14 @@ header#header {
 
       #block--exp-products-page {
         float: left;
-        width: 47%;
+        width: 400px;
         padding: 14px 0 0 0;
       }
 
       #block-user-menu {
         width: 47%;
         float: right;
-        padding: 14px 0 0 100px;
+        padding: 14px 0 0 10px;
 
         ul li {
           float: left;
@@ -71,7 +68,7 @@ header#header {
       }
 
       #edit-title {
-        width: 395px;
+        width: 300px;
         height: 40px;
         margin: -10px 0 0 0;
         border: 1px solid grey;

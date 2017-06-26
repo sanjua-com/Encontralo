@@ -569,14 +569,11 @@ header#header .container {
   max-width: 93%;
 }
 header#header .container img {
-  border: 1px solid white;
   border-radius: 50px;
 }
 header#header .container #logo {
   float: left;
   margin: 13px 20px 10px 0;
-  width: 40px;
-  height: 40px;
 }
 header#header .container #site-name {
   float: left;
@@ -589,13 +586,13 @@ header#header .container #header-region {
 }
 header#header .container #header-region #block--exp-products-page {
   float: left;
-  width: 47%;
+  width: 400px;
   padding: 14px 0 0 0;
 }
 header#header .container #header-region #block-user-menu {
   width: 47%;
   float: right;
-  padding: 14px 0 0 100px;
+  padding: 14px 0 0 10px;
 }
 header#header .container #header-region #block-user-menu ul li {
   float: left;
@@ -622,7 +619,7 @@ header#header .container #header-region .buy {
   color: #ffffff;
 }
 header#header .container #header-region #edit-title {
-  width: 395px;
+  width: 300px;
   height: 40px;
   margin: -10px 0 0 0;
   border: 1px solid grey;
