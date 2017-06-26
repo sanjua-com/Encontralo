@@ -1,0 +1,91 @@
+.page-user #main .container {
+  #content {
+    .breadcrumb, .tabs {
+      display: none;
+    }
+    background: #ffffff;
+    margin-top: 10px;
+    border-radius: 3px;
+    h1 {
+      font-size: 25px;
+      padding: 18px;
+      border-bottom: 1px solid #c0c0c0;
+    }
+    #content-area {
+      form {
+        margin-left: 85px;
+        margin-top: 50px;
+      }
+      .form-type-textfield label {
+        float: left;
+        margin-top: 8px;
+      }
+      form {
+        .form-item-name {
+          margin-left: 35px;
+          .description {
+            margin-left: 110px;
+            margin-right: 20px;
+            color: #ccc;
+          }
+        }
+        .form-item-mail .description {
+          margin-left: 145px;
+          margin-right: 20px;
+          color: #ccc;
+        }
+        input {
+          width: 330px;
+          height: 38px;
+          margin: 0 0 10px 30px;
+          border-radius: 3px;
+          color: #ccc;
+        }
+      }
+      #field-profie-firstname-add-more-wrapper .form-item {
+        margin-left: 31px;
+        input {
+          width: 330px;
+          height: 38px;
+          margin: 0 0 10px 30px;
+          border-radius: 3px;
+          color: #ccc;
+        }
+      }
+      #field-profile-lastname-add-more-wrapper .form-item {
+        margin-left: 32px;
+        input {
+          width: 330px;
+          height: 38px;
+          margin: 0 0 10px 30px;
+          border-radius: 3px;
+          color: #ccc;
+        }
+      }
+      .form-actions {
+        margin: 0 0 20px 114px;
+        input {
+          background: #02b875;
+          border: 1px solid #02b875;
+          border-radius: 3px;
+          color: #ffffff;
+          height: 38px;
+        }
+      }
+      .form-type-password {
+        margin-left: 35px;
+        label {
+          float: left;
+          margin-right: 4px;
+        }
+        .description {
+          color: #ccc;
+          margin-left: 110px;
+        }
+      }
+    }
+  }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}

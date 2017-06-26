@@ -1,0 +1,1183 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (min-width: 20em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 45em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+  }
+}
+@media screen and (min-width: 60em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a:link, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+#site-name {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+table {
+  width: 100%;
+}
+
+tr.even td,
+tr.odd td {
+  padding: 10px 5px;
+}
+
+tr.odd {
+  background-color: white;
+}
+
+pre, code, tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+
+pre {
+  background-color: #efefef;
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #aaaaaa;
+}
+
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
+ul ul ul ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: decimal;
+}
+
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+#edit-title {
+  font-size: 24px;
+  width: 99%;
+}
+
+#system-themes-form img {
+  width: 100px;
+}
+
+.form-item .description {
+  font-style: italic;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: #777777;
+}
+
+#edit-delete {
+  color: #cc0000;
+}
+
+div.messages {
+  padding: 9px;
+  margin: 1em 0;
+  color: #003366;
+  background: #bbddff;
+  border: 1px solid #aaccee;
+  word-wrap: break-word;
+}
+
+div.warning {
+  color: #884400;
+  background: #ffee66;
+  border-color: #eedd55;
+}
+
+div.error {
+  color: white;
+  background: #ee6633;
+  border-color: #dd5522;
+}
+
+div.status {
+  color: #336600;
+  background: #ccff88;
+  border-color: #bbee77;
+}
+
+#header, #footer,
+#sidebar-first,
+#sidebar-second,
+#navigation {
+  background: rgba(170, 170, 170, 0.2);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (min-width: 20em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 45em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+  }
+}
+@media screen and (min-width: 60em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+  }
+}
+
+label {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+textarea,
+select[multiple=multiple] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  -moz-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 6.66667px;
+  max-width: 100%;
+}
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+textarea:hover,
+select[multiple=multiple]:hover {
+  border-color: #999999;
+}
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+textarea:focus,
+select[multiple=multiple]:focus {
+  border-color: black;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 5px;
+}
+
+input[type="file"] {
+  width: auto;
+  padding-bottom: 10px;
+}
+
+select {
+  max-width: 100%;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: 1px solid black;
+  padding: 6.66667px 10px;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (min-width: 20em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.66667%, #eee 26.66667%, #eee 46.66667%, transparent 46.66667%, transparent 53.33333%, #eee 53.33333%, #eee 73.33333%, transparent 73.33333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 45em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 9.67742%, transparent 9.67742%, transparent 12.90323%, #eee 12.90323%, #eee 22.58065%, transparent 22.58065%, transparent 25.80645%, #eee 25.80645%, #eee 35.48387%, transparent 35.48387%, transparent 38.70968%, #eee 38.70968%, #eee 48.3871%, transparent 48.3871%, transparent 51.6129%, #eee 51.6129%, #eee 61.29032%, transparent 61.29032%, transparent 64.51613%, #eee 64.51613%, #eee 74.19355%, transparent 74.19355%, transparent 77.41935%, #eee 77.41935%, #eee 87.09677%, transparent 87.09677%, transparent 90.32258%, #eee 90.32258%, #eee 100.0%, transparent 100.0%);
+  }
+}
+@media screen and (min-width: 60em) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.38298%, transparent 6.38298%, transparent 8.51064%, #eee 8.51064%, #eee 14.89362%, transparent 14.89362%, transparent 17.02128%, #eee 17.02128%, #eee 23.40426%, transparent 23.40426%, transparent 25.53191%, #eee 25.53191%, #eee 31.91489%, transparent 31.91489%, transparent 34.04255%, #eee 34.04255%, #eee 40.42553%, transparent 40.42553%, transparent 42.55319%, #eee 42.55319%, #eee 48.93617%, transparent 48.93617%, transparent 51.06383%, #eee 51.06383%, #eee 57.44681%, transparent 57.44681%, transparent 59.57447%, #eee 59.57447%, #eee 65.95745%, transparent 65.95745%, transparent 68.08511%, #eee 68.08511%, #eee 74.46809%, transparent 74.46809%, transparent 76.59574%, #eee 76.59574%, #eee 82.97872%, transparent 82.97872%, transparent 85.10638%, #eee 85.10638%, #eee 91.48936%, transparent 91.48936%, transparent 93.61702%, #eee 93.61702%, #eee 100.0%, transparent 100.0%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+body {
+  margin:0;
+  padding: 0;
+  background: #eceff1;
+}
+#header {
+  background: #02b875;
+  width: 100%;
+  height: 60px;
+}
+
+.fullscreen-bg__video {
+  width: 100%;
+}
+
+#page header .container {
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 93%;
+}
+#page header .container img{
+  border:1px solid white;
+  border-radius: 50px;
+}
+#page header .container #logo {
+  float: left;
+  margin:13px 20px 10px 0;
+  width:40px;
+  height: 40px;
+}
+#page header .container #site-name {
+  float: left;
+  margin:30px 10px 10px 20px;
+  font-size: 20px;
+}
+#page header .container #header-region {
+  float: left;
+  width: 95%;
+}
+#page header .container #header-region #block--exp-products-page {
+  float: left;
+  width: 47%;
+  padding: 14px 0 0 0;
+}
+#page header .container #header-region  #block-user-menu {
+  width:47%;
+  float: right;
+  padding: 14px 0 0 100px
+}
+#page header .container #header-region  #block-user-menu ul li {
+  float: left;
+}
+#page header .container #header-region  #block-user-menu ul li a {
+  color: #ffffff;
+
+}
+#page header .container #header-region  #block-user-menu .ayuda a {
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  padding:5px 20px 5px 20px;
+}
+#page header .container #header-region .leaf {
+  float: left;
+  list-style: none;
+}
+#page header .container #header-region .buy {
+  border-radius: 3px;
+  border:1px solid #ffffff;
+  padding:0 30px 0 30px;
+  height: 40px;
+  line-height: 40px;
+  margin: -6px 10px 0 30px;
+  color: #ffffff;
+}
+#page header .container #header-region #edit-title {
+  width:395px;
+  height:40px;
+  margin: -10px 0 0 0;
+  border:1px solid grey;
+  border-radius: 3px;
+}
+#page header .container #header-region .form-submit {
+  width:80px;
+  height:40px;
+  margin:-10px 10px;
+  float: left;
+  border:1px solid #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+#main {
+  clear: both;
+}
+#main .container {
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 93%;
+}
+#content-area #block-featured_products-block {
+  margin: 20px 0 10px 0;
+  overflow: hidden;
+}
+#content-area #block-featured_products-block h3 {
+  font-size: 20px;
+}
+#content-area #block-featured_products-block .view-content .views-row {
+  float: left;
+  margin:0 17px 0 0;
+}
+#content-area #block-featured_products-block .view-content .views-row-10,
+#content-area #block-featured_products-block .view-content .views-row-5 {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+#content-area #block-featured_products-block .view-content .views-row .field-type-image {
+  margin: 0 0 10px;
+}
+#content-area #block-featured_products-block .view-content .views-row .field-type-image img {
+  width: 228px;
+  height: 183px;
+}
+#content-area #block-featured_products-block .view-content .views-row .field-name-field-product-price {
+  text-align: center;
+  margin:0 0 10px 0;
+  font-size: 20px;
+}
+#content-area #block-featured_products-block .view-content .views-row .field-name-title {
+  text-align: center;
+  font-size: 10px;
+}
+#content-area #block-_featured_products_search-block {
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+}
+#content-area #block-_featured_products_search-block .title {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#content-area #block-_featured_products_search-block .views-row {
+  width:227px;
+  height: 256.53px;
+  background: #ffffff;
+  border-bottom:1px solid #607d8b;
+  border-right:1px solid #607d8b;
+  border-radius: 3px;
+  margin-right: 17px;
+  float: left;
+  margin-top: 5px;
+}
+#content-area #block-_featured_products_search-block .views-row-last {
+  float: right;
+  margin: 5px 0 0 0;
+}
+#content-area #block-_featured_products_search-block .field-name-field-product-image img {
+  width:100%;
+  height: auto;
+}
+#content-area #block-_featured_products_search-block .field-name-title {
+  text-align: center;
+  margin:10px;
+}
+#content-area #block-_featured_products_search-block .field-name-body {
+  margin: 0 0 0 10px;
+}
+#content-area #block-_featured_products_search-block .view a {
+  text-align: center;
+  color: #607d8b;
+  font-size: 15px;
+}
+#content-area #block-featured_category-block {
+  margin:0;
+  clear: both;
+  overflow: hidden;
+}
+#content-area #block-featured_category-block .title {
+  font-size: 20px;
+  margin-top: 5px;
+}
+#content-area #block-featured_category-block .view-row-parent-term {
+  width:230px;
+  height: 320px;
+  background: #ffffff;
+  border-bottom:1px solid grey;
+  border-right:1px solid grey;
+  border-radius: 3px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+#content-area #block-featured_category-block .view-row-parent-term img {
+  width:60px;
+  height: 60px;
+  border:1px solid black;
+  border-radius: 50px;
+  display: block;
+  margin: 10px;
+}
+#content-area #block-featured_category-block .view-row-parent-term ul li{
+  list-style: none;
+}
+#content-area #block-featured_category-block .view-row-parent-term h3 {
+  font-size: 15px;
+  text-align: left;
+  margin: 0 0 10px 10px;
+}
+#content-area #block-featured_category-block .view-row-parent-term a {
+  color: #607d8b;
+   margin: 0 0 0 10px;
+   font-size: 14px;
+}
+#content-area #block-featured_category-block .view-row-parent-term h2 {
+  text-align: center;
+  margin:10px;
+  font-size: 15px;
+  clear: both;
+}
+#content-area #block-featured_products-block .view-content .ds-1col {
+  width:227px;
+  height: 256.53px;
+  background: #ffffff;
+  border-bottom:1px solid #607d8b;
+  border-right:1px solid #607d8b;
+  border-radius: 3px;
+  margin: 5px 0 5px 0;
+}
+#content-area #block-featured_products-block .view-content .field  a {
+  color: #607d8b;
+   font-size: 13px;
+}
+
+#pre-footer {
+  background: #e3e6e9;
+  width: 100%;
+  height: 230px;
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  overflow: hidden;
+  clear: both;
+}
+#pre-footer .container {
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 93%;
+}
+#pre-footer .container #block-menu-information .leaf {
+  list-style: none;
+}
+#pre-footer .container #block-menu-servicios-de-olx .leaf {
+  list-style: none;
+}
+#pre-footer .container .title {
+  font-size: 16px;
+}
+#pre-footer .container .block{
+  margin: 40px 20px 0 10px;
+  float: left;
+  width: 20%;
+}
+#pre-footer .container .block .menu {
+  list-style: none;
+  font-size: 12px;
+}
+#pre-footer .container .block .menu a {
+  color: #607d8b;
+}
+#pre-footer .container #block-2 .spams img {
+  width: 200px;
+  height: 178px;
+  max-width: 529%;
+  margin: -108px 0 0 192px;
+
+}
+
+#footer .container {
+  background: #02b875;
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  height: 50px;
+  text-align: 50%;
+  height: 45px;
+}
+#footer .container p {
+  clear: both;
+  line-height: 45px;
+  margin: 0 0 0 50px;
+  font-size: 13px;
+}
+
+
+.node-type-product-search #content-area,
+.node-type-product #content-area {
+  width: 822px;
+  height: 760px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.node-type-product-search #content-area .node-product-search,
+.node-type-product #content-area .node-product {
+  float: left;
+}
+.node-type-product-search #content-area .group-left,
+.node-type-product #content-area .group-header-left {
+  float: left;
+}
+.node-type-product-search #content-area .group-right,
+.node-type-product #content-area .group-header-right {
+  float: right;
+}
+.node-type-product #content-area .group-header-right .field-name-field-product-price {
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.node-type-product #content-area .group-header-right .flag-outer  {
+  margin: 20px 10px -10px 18px;
+}
+.node-type-product-search #content-area .group-right .flag-outer a,
+.node-type-product #content-area .group-header-right .flag-outer  a {
+  background: url("../images/corazon.jpg") no-repeat;
+  width: 30px;
+  height: 30px;
+  text-indent: -500em;
+  display: block;
+  background-size: 100%;
+  margin:0 20px 0 46px;
+}
+.node-type-product-search #content-area .field-name-title h2,
+.node-type-product #content-area .field-name-title h2 {
+  padding:10px 0 0 20px;
+  float: left;
+}
+.node-type-product-search #content-area .field-name-submitted-by,
+.node-type-product #content-area .field-name-submitted-by {
+  margin: 0 0 10px 20px;
+  color: grey;
+  font-size: 14px;
+}
+.node-type-product-search #content-area .field-name-field-product-image img,
+.node-type-product #content-area .field-name-field-product-image img {
+  width: 794px;
+  height: 448px;
+  margin: 15px;
+}
+.node-type-product-search #content-area .field-name-body p,
+.node-type-product #content-area .field-name-body {
+  padding: 5px 0 5px 20px;
+}
+.node-type-product-search #content-area .field-name-field-email .field-label {
+  float: left;
+  margin-left: 20px;
+}
+.node-type-product-search #content-area .field-name-field-email a {
+  color: grey;
+}
+.node-type-product-search #content-area .field-name-field-phone .field-label {
+  float: left;
+  margin-left: 20px;
+}
+.node-type-product-search #content-area .flag-outer-like {
+  margin: -53px 20px 20px 731px;
+  width: 50px;
+  height: 50px;
+}
+  /*category*/
+
+
+#main #content #content-area .field-name-field-product-category {
+  margin: 10px 0 0 20px;
+}
+#main #content #content-area .field-name-field-product-category .field-items a {
+  color: #9E9E9E;
+}
+#main #content #content-area .field-name-field-related-shop {
+  margin: 10px 0 0 20px;
+}
+#main #content #content-area .field-name-field-related-shop .field-items a {
+  color: #9E9E9E;
+}
+#main #content #content-area .field-name-post-date {
+  margin: 0 0 0 20px;
+}
+
+
+/*desde aca estan los codigos de las columnas de productos*/
+
+
+#sidebar-second {
+  margin-top: 124px;
+  width: 370px;
+  margin-left: 14px;
+}
+#sidebar-second #block-user_contact-block .view-id-user_contact .views-field-picture img {
+  width:130px;
+  height: 130px;
+  border:1px solid grey;
+  border-radius: 50%;
+  margin: 20px 120px 20px 120px;
+}
+#sidebar-second #block-user_contact-block .view-id-user_contact .views-field-name  {
+  text-align: center;
+  font-size: 25px;
+}
+#sidebar-second #block-privatemsg_block_new label {
+  margin: 0 0 10px 20px;
+}
+#sidebar-second #block-privatemsg_block_new .form-textarea-wrapper textarea {
+  display: block;
+  margin: 0 15px 0 15px;
+  width: 92%;
+  border:1px solid #9E9E9E;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+#sidebar-second #block-privatemsg_block_new .fieldset-wrapper, .filter-wrapper, .fieldset-title, .collapsed, #edit-cancel {
+  display: none;
+}
+#sidebar-second #block-privatemsg_block_new .form-actions input {
+  width: 92%;
+  height: 42px;
+  margin: 0 15px 0 15px;
+  color: white;
+  background: #02b875;
+  border: 1px solid #02b875;
+  border-radius: 3px;
+}
+
+/*sidebar first*/
+#sidebar-first {
+  margin-top: 94px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+
+}
+#sidebar-first .views-exposed-form label {
+  margin: 10px;
+  text-align: center;
+}
+#sidebar-first .views-exposed-form .views-widget select {
+  margin: 0 0 0 11px;
+}
+
+#sidebar-first #block--exp-products-product_filter label {
+  margin: 10px 0 10px 0 20px;
+}
+#sidebar-first #block--exp-products-block_1 input {
+  width: 80px;
+  height: 42px;
+  color: white;
+  background: #02b875;
+  border: 1px solid #02b875;
+  border-radius: 3px;
+  margin: 0 0 10px 100px;
+}
+/*main categoria*/
+
+#main #content #content-area .view-products .view-content {
+  border:1px solid #02b875;
+}
+#main #content #content-area .view-products .view-content .field-name-field-product-image img {
+  float: left;
+  width: 144px;
+  height: 112px;
+  border:1px solid #c0c0c0;
+  border-radius: 3px;
+}
+#main #content #content-area .view-products .view-content .group-left {
+  width: 18%;
+  float: left;
+}
+#main #content #content-area .view-products .field-name-field-featured {
+  background: #02b875;
+  width: 100px;
+  color: white;
+  border:1px solid #02b875;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 3px;
+}
+
+#main #content #content-area .view-products .view-content .field-name-title h2 {
+  width: 200px;
+  float: left;
+  margin:  0px 0 0 5px;
+}
+#main #content #content-area .view-products .view-content .field-name-title a {
+  color: #607d8b;
+  font-size: 25px;
+}
+#main #content #content-area .view-products .view-content .field-name-field-product-price .field-item {
+  float: left;
+  font-size: 25px;
+  margin: 30px 40px 0 0;
+  width: 100px;
+}
+#main #content #content-area .view-products .view-content .group-right {
+  width: 32%;
+  float: right;
+}
+#main #content #content-area .view-products .view-content .group-right .field-type-ds {
+  color: #607d8b;
+  font-size: 13px;
+  margin-top: 35px;
+}
+#main #content #content-area .view-products .view-content .views-row {
+  border-bottom: 1px solid #02b875;
+  padding: 10px 0 10px 10px;
+}
+#main #content #content-area .view-products .view-content .views-row-last {
+  border-bottom: 0;
+}
+
+
+
+#main #content #content-area .item-list .pager {
+  margin: 10px 20px 10px 20px;
+}
+#main #content #content-area .item-list .pager .pager-current {
+  background: #607d8b;
+  border:1px solid #607d8b ;
+  border-radius: 19px;
+  color: #ffffff;
+  padding: 2px 6px;
+  font-size: 15px;
+}
+#main #content #content-area .item-list .pager a {
+  color: #607d8b;
+  font-size: 15px;
+}
+
+/*pedidos y buscados*/
+.page-taxonomy #content #content-area {
+  border:1px solid #02b875;
+}
+.page-taxonomy #content #content-area .views-row {
+  border-bottom: 1px solid #02b875;
+  padding: 10px 0 10px 0;
+}
+.page-taxonomy #content #content-area .views-row-last {
+  border-bottom: 0;
+}
+.page-taxonomy #content #content-area .contextual-links-region .group-left {
+  width: 250px;
+  height: 160px;
+}
+.page-taxonomy #content #content-area .contextual-links-region .group-middle {
+  width: 24%;
+  float: left;
+}
+.page-taxonomy #content #content-area .contextual-links-region img {
+  width: 180px;
+  height: 160px;
+  margin: 0 10px;
+}
+.page-taxonomy #content #content-area .contextual-links-region .field-name-field-featured {
+  background: #02b875;
+  width: 100px;
+  color: white;
+  border: 1px solid #02b875;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 3px;
+  margin-bottom: 20px;
+}
+.page-taxonomy #content #content-area .group-middle a {
+  color: #607d8b;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.page-taxonomy #content #content-area .group-right .field-name-field-product-price {
+  font-size: 40px;
+  margin:50px 20px 30px 0;
+}
+.page-taxonomy #content #content-area .group-right .field-name-post-date .field-items {
+  margin-left: -15px;
+}
+
+/*bloque de registro*/
+
+.page-user #main .container #content .breadcrumb {
+  display: none;
+}
+.page-user #main .container #content .tabs {
+  display: none;
+}
+.page-user #main .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+.page-user #main .container #content {
+  background: #ffffff;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.page-user #main .container #content h1 {
+  font-size: 25px;
+  padding: 18px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.page-user #main .container #content #content-area form {
+  margin-left: 85px;
+  margin-top: 50px;
+}
+.page-user #main .container #content #content-area .form-type-textfield label {
+  float: left;
+  margin-top: 8px;
+}
+
+.page-user #main .container #content #content-area form .form-item-name {
+  margin-left: 35px;
+}
+.page-user #main .container #content #content-area form .form-item-name .description {
+  margin-left: 110px;
+  margin-right: 20px;
+  color: #ccc;
+}
+.page-user #main .container #content #content-area form .form-item-mail .description {
+  margin-left: 145px;
+  margin-right: 20px;
+  color: #ccc;
+}
+.page-user #main .container #content #content-area form input {
+  width:330px;
+  height: 38px;
+  margin: 0 0 10px 30px;
+  border-radius: 3px;
+  color: #ccc;
+}
+.page-user #main .container #content #content-area #field-profie-firstname-add-more-wrapper .form-item {
+  margin-left: 31px;
+}
+.page-user #main .container #content #content-area #field-profie-firstname-add-more-wrapper .form-item input {
+  width:330px;
+  height: 38px;
+  margin: 0 0 10px 30px;
+  border-radius: 3px;
+  color: #ccc;
+}
+.page-user #main .container #content #content-area #field-profile-lastname-add-more-wrapper .form-item {
+  margin-left: 32px;
+}
+.page-user #main .container #content #content-area #field-profile-lastname-add-more-wrapper .form-item input {
+  width:330px;
+  height: 38px;
+  margin: 0 0 10px 30px;
+  border-radius: 3px;
+  color: #ccc;
+}
+.page-user #main .container #content #content-area .form-actions {
+  margin: 0 0 20px 114px;
+
+}
+.page-user #main .container #content #content-area .form-actions input {
+  background: #02b875;
+  border: 1px solid #02b875;
+  border-radius: 3px;
+  color: #ffffff;
+  height: 38px;
+}
+.page-user #main .container #content #content-area .form-type-password {
+  margin-left: 35px;
+}
+.page-user #main .container #content #content-area .form-type-password label {
+  float: left;
+  margin-right: 4px;
+}
+.page-user #main .container #content #content-area .form-type-password .description {
+  color: #ccc;
+  margin-left: 110px;
+}
+
+/*section FAQ*/
+
+.page-faq-page #main .container #content #content-area .faq-ul-questions-top {
+  background: #ffffff;
+  border:1px solid #ccc;
+  border-radius: 3px;
+  width: 658px;
+
+}
+.page-faq-page #main .container #content #content-area .faq-ul-questions-top li {
+  width: 658px;
+  height: 78px;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  list-style: none;
+  line-height: 78px;
+  padding-left: 40px;
+}
+.page-faq-page #main .container #content #content-area .faq-ul-questions-top li a {
+  font-size: 20px;
+}
+.page-faq-page #main .container #content #content-area .faq-question {
+  border:1px solid #ccc;
+  border-radius: 3px;
+  background: #ffffff;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 40px;
+  width: 658px;
+}
+.page-faq-page #main .container #content #content-area .faq-answer {
+  border:1px solid #ccc;
+  border-radius: 3px;
+  background: #ffffff;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 40px;
+  width: 658px;
+}
+.page-faq-page #main .container #content #content-area .faq-answer .field-name-field-faq-category .field-label {
+  display: none;
+}
+.page-faq-page #main .container #content #content-area .faq-question a {
+  color: #ccc;
+}
+.page-faq-page #main .container #content #content-area .faq-answer a {
+  color: grey;
+}
+.page-faq-page #main .container #content #content-area .faq-answer .first {
+  display: none;
+}
+
+/*FOOTER CATEGORY*/
+
+.page-node-81 #main .container #content #content-area {
+  background: #ffffff;
+  border:1px solid #ccc;
+  border-radius: 3px;
+}
+.page-node-81 #main .container #content #content-area p {
+  margin: 20px;
+  color: #555555;
+  font-size: 15px;
+}
+.page-node-82 #main .container #content #content-area {
+  background: #ffffff;
+  border:1px solid #ccc;
+  border-radius: 3px;
+}
+.page-node-82 #main .container #content #content-area p {
+  margin: 20px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.page-node-83 #main .container #content #content-area {
+  background: blueviolet;
+  border:1px solid blueviolet;
+  border-radius: 10px;
+}
+.page-node-83 #main .container #content #content-area p {
+  margin: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+

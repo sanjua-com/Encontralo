@@ -8,29 +8,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      // This is where we set up all the tasks we'd like grunt to watch for
-      // changes.
-      scripts: {
-        files: ['js/source/{,*/}*.js'],
-        tasks: ['uglify'],
-        options: {
-          spawn: false,
-        },
-      },
-      images: {
-        files: ['images/source/{,*/}*.{png,jpg,gif}'],
-        tasks: ['imagemin'],
-        options: {
-          spawn: false,
-        }
-      },
-      vector: {
-        files: ['images/source/{,*/}*.svg'],
-        tasks: ['svgmin'],
-        options: {
-          spawn: false,
-        }
-      },
       css: {
         files: ['sass/{,*/}*.{scss,sass}'],
         tasks: ['sass'],
@@ -39,56 +16,13 @@ module.exports = function(grunt) {
         }
       }
     },
-    uglify: {
-      // This is for minifying all of our scripts.
-      options: {
-        sourceMap: true,
-        mangle: false
-      },
-      my_target: {
-        files: [{
-          expand: true,
-          cwd: 'js/source',
-          src: '{,*/}*.js',
-          dest: 'js/build'
-        }]
-      }
-    },
-    imagemin: {
-      // This will optimize all of our images for the web.
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'images/source/',
-          src: ['{,*/}*.{png,jpg,gif}' ],
-          dest: 'images/optimized/'
-        }]
-      }
-    },
-    svgmin: {
-      options: {
-        plugins: [{
-          removeViewBox: false
-        }, {
-          removeUselessStrokeAndFill: false
-        }]
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'images/source/',
-          src: ['{,*/}*.svg' ],
-          dest: 'images/optimized/'
-        }]
-      }
-    },
     sass: {
       // This will compile all of our sass files. Additional configuration
       // options can be found at https://github.com/gruntjs/grunt-contrib-sass
       dist: {
         options: {
           style: 'expanded', // This controls the compiled css and can be changed to nested, compact or compressed
-          require: 'sass-globbing',
+          //require: 'sass-globbing',
         },
         files: [{
           expand: true,
@@ -121,6 +55,7 @@ module.exports = function(grunt) {
       }
     },
   });
+
   // This is where we tell Grunt we plan to use this plug-in.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');

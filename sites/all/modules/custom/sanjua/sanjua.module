@@ -4,106 +4,16 @@
  * Implementation of hook_menu()
  */
 function sanjua_menu(){
+	$items = array();
+
   $items['settings'] = array(
     'title' => t('General Settings'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('sanjua_settings_form'),
     'access callback' => TRUE,
+		'access arguments' => array('access administration pages'),
+		'file' => 'sanjua.admin.inc',
   );
 
   return $items;
 }
-
-function sanjua_settings_form($form, &$form_state) {
-
-/*
-  $form['product_reference'] = array(
-    '#type' => 'entityreference',
-    '#title' => t('Product Reference'),
-    '#era_entity_type' => 'node',  // Mandatory.
-    '#era_bundles' => array(), // Optional (Any bundle by default).
-    '#era_cardinality' => 3,       // Optional (1 By default).
-    '#era_query_settings' => array(
-      'limit' => 15, // Default is 50.
-      'property_conditions' => array(
-        // 'entity property', 'filter value', 'operator'.
-        array('nid', 0, '>'),
-      ),
-      'field_conditions' => array(
-        // 'field name', 'column', 'value', 'op', 'delta', 'language'.
-        //array('field_test_field', 'value', 'test'),
-      ),
-    ),
-  );
-  */
-
-  $form['title'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Title of site'),
-    '#required' => TRUE,
-  );
-
-  $form['slogan'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Slogan'),
-  );
-
-  $form['copyright'] = array(
-    '#type' => 'textarea',
-    '#title' => t('Copyright'),
-  );
-
-  $form['logo'] = array(
-    '#type' => 'managed_file',
-    '#name' => 'logo',
-    '#title' => t('Block image'),
-    '#size' => 40,
-    '#description' => t("Image should be less than 400 pixels wide and in JPG format."),
-    '#upload_location' => 'public://'
-  );
-
-/*
-  $form['user_reference'] = array(
-    '#type' => 'entityreference',
-    '#title' => t('User Reference'),
-    '#era_entity_type' => 'user',  // Mandatory.
-    '#era_bundles' => array(), // Optional (Any bundle by default).
-    '#era_cardinality' => 3,       // Optional (1 By default).
-    '#era_query_settings' => array(
-      'limit' => 15, // Default is 50.
-      'property_conditions' => array(
-        // 'entity property', 'filter value', 'operator'.
-        array('uid', 0, '>'),
-      ),
-    ),
-  );*/
-
-  $form['submit_button'] = array(
-    '#type' => 'submit',
-    '#value' => t('Save'),
-  );
-
-  return $form;
-}
-
-function sanjua_settings_validate($form, &$form_state) {
-  // Shoe message if some field is not complete.
-}
-
-function sanjua_settings_form_submit($form, &$form_state) {
-  if (isset($form_state['values']['logo'])) {
-    $file = file_load($form_state['values']['logo']);
-
-    $file->status = FILE_STATUS_PERMANENT;
-
-    file_save($file);
-  }
-}
-
-/*
- * function youmodule_form_alter(&$form, $form_id) {
-  if ($form_id === 'your_node_form' && user_is_anonumous()) {
-    drupal_goto('/user/regiser');
-  }
-}
- */

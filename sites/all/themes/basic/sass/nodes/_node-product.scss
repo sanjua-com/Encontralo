@@ -1,0 +1,82 @@
+.node-type-product-search,
+.node-type-product {
+  #content-area {
+    width: 822px;
+    background: #ffffff;
+    overflow: hidden;
+
+    .field-name-submitted-by {
+      margin: 0 0 10px 20px;
+      color: grey;
+      font-size: 14px;
+    }
+
+    .view-mode-full {
+      .group-header-left,
+      .group-left {
+        float: left;
+
+        .field-name-title h2 {
+          padding: 10px 0 0 20px;
+          float: left;
+        }
+      }
+
+      .group-header-right
+      .group-right {
+        float: right;
+
+        .field-name-field-product-price {
+          font-size: 35px;
+          font-weight: bold;
+          margin-right: 20px;
+        }
+
+        .flag-outer-like {
+          margin: -53px 20px 20px 731px;
+          width: 50px;
+          height: 50px;
+
+          .flag-outer {
+            margin: 20px 10px -10px 18px;
+
+            a {
+              background: url("../images/corazon.jpg") no-repeat;
+              width: 30px;
+              height: 30px;
+              text-indent: -500em;
+              display: block;
+              background-size: 100%;
+              margin: 0 20px 0 46px;
+            }
+          }
+        }
+      }
+
+      .field-name-field-product-image img {
+        width: 794px;
+        height: 448px;
+        margin: 15px;
+      }
+
+      .field-name-body p {
+        padding: 5px 0 5px 20px;
+      }
+
+      .field-name-field-email {
+        .field-label {
+          float: left;
+          margin-left: 20px;
+        }
+        a {
+          color: grey;
+        }
+      }
+
+      .field-name-field-phone .field-label {
+        float: left;
+        margin-left: 20px;
+      }
+    }
+  }
+}
