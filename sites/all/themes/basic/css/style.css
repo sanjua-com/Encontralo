@@ -297,12 +297,6 @@ body:before {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #eceff1;
-}
-
 #block-featured_products-block {
   margin: 20px 0 10px 0;
   overflow: hidden;
@@ -564,61 +558,61 @@ body {
   margin-left: 20px;
 }
 
-header {
-  background: #02b875;
+header#header {
+  background: #FF8230;
   width: 100%;
   height: 60px;
 }
-header .container {
+header#header .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 93%;
 }
-header .container img {
+header#header .container img {
   border: 1px solid white;
   border-radius: 50px;
 }
-header .container #logo {
+header#header .container #logo {
   float: left;
   margin: 13px 20px 10px 0;
   width: 40px;
   height: 40px;
 }
-header .container #site-name {
+header#header .container #site-name {
   float: left;
   margin: 30px 10px 10px 20px;
   font-size: 20px;
 }
-header .container #header-region {
+header#header .container #header-region {
   float: left;
   width: 95%;
 }
-header .container #header-region #block--exp-products-page {
+header#header .container #header-region #block--exp-products-page {
   float: left;
   width: 47%;
   padding: 14px 0 0 0;
 }
-header .container #header-region #block-user-menu {
+header#header .container #header-region #block-user-menu {
   width: 47%;
   float: right;
   padding: 14px 0 0 100px;
 }
-header .container #header-region #block-user-menu ul li {
+header#header .container #header-region #block-user-menu ul li {
   float: left;
 }
-header .container #header-region #block-user-menu ul li a {
+header#header .container #header-region #block-user-menu ul li a {
   color: #ffffff;
 }
-header .container #header-region #block-user-menu .ayuda a {
+header#header .container #header-region #block-user-menu .ayuda a {
   border-right: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
   padding: 5px 20px 5px 20px;
 }
-header .container #header-region .leaf {
+header#header .container #header-region .leaf {
   float: left;
   list-style: none;
 }
-header .container #header-region .buy {
+header#header .container #header-region .buy {
   border-radius: 3px;
   border: 1px solid #ffffff;
   padding: 0 30px 0 30px;
@@ -627,14 +621,14 @@ header .container #header-region .buy {
   margin: -6px 10px 0 30px;
   color: #ffffff;
 }
-header .container #header-region #edit-title {
+header#header .container #header-region #edit-title {
   width: 395px;
   height: 40px;
   margin: -10px 0 0 0;
   border: 1px solid grey;
   border-radius: 3px;
 }
-header .container #header-region .form-submit {
+header#header .container #header-region .form-submit {
   width: 80px;
   height: 40px;
   margin: -10px 10px;
@@ -645,7 +639,6 @@ header .container #header-region .form-submit {
 }
 
 #footer .container {
-  background: #02b875;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -663,7 +656,7 @@ header .container #header-region .form-submit {
 }
 
 #pre-footer {
-  background: #e3e6e9;
+  background: #DDDDDD;
   width: 100%;
   height: 230px;
   border-top: 1px solid grey;
@@ -949,6 +942,13 @@ header .container #header-region .form-submit {
 }
 .page-faq-page #main .container #content #content-area .faq-answer .first {
   display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #8F8F8F;
 }
 
 #main {
