@@ -1,0 +1,150 @@
+#block-featured_products-block {
+  margin: 20px 0 10px 0;
+  overflow: hidden;
+  h3 {
+    font-size: 20px;
+  }
+
+  .view-content {
+    .views-row {
+      float: left;
+      margin: 0 17px 0 0;
+    }
+    .views-row-10, .views-row-5 {
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+    .views-row {
+      .field-type-image {
+        margin: 0 0 10px;
+
+        img {
+          width: 228px;
+          height: 183px;
+        }
+      }
+      .field-name-field-product-price {
+        text-align: center;
+        margin: 0 0 10px 0;
+        font-size: 20px;
+      }
+      .field-name-title {
+        text-align: center;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+#block-_featured_products_search-block {
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+  .title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .views-row {
+    width: 227px;
+    height: 256.53px;
+    background: #ffffff;
+    border-bottom: 1px solid #607d8b;
+    border-right: 1px solid #607d8b;
+    border-radius: 3px;
+    margin-right: 17px;
+    float: left;
+    margin-top: 5px;
+  }
+  .views-row-last {
+    float: right;
+    margin: 5px 0 0 0;
+  }
+  .field-name-field-product-image img {
+    width: 100%;
+    height: auto;
+  }
+  .field-name-title {
+    text-align: center;
+    margin: 10px;
+  }
+  .field-name-body {
+    margin: 0 0 0 10px;
+  }
+  .view a {
+    text-align: center;
+    color: #607d8b;
+    font-size: 15px;
+  }
+}
+
+#block-featured_category-block {
+  margin: 0;
+  clear: both;
+  overflow: hidden;
+  .title {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .view-row-parent-term {
+    width: 230px;
+    height: 320px;
+    background: #ffffff;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 3px;
+    float: left;
+    margin: 0 10px 10px 0;
+    img {
+      width: 60px;
+      height: 60px;
+      border: 1px solid black;
+      border-radius: 50px;
+      display: block;
+      margin: 10px;
+    }
+    ul li {
+      list-style: none;
+    }
+    h3 {
+      font-size: 15px;
+      text-align: left;
+      margin: 0 0 10px 10px;
+    }
+    a {
+      color: #607d8b;
+      margin: 0 0 0 10px;
+      font-size: 14px;
+    }
+    h2 {
+      text-align: center;
+      margin: 10px;
+      font-size: 15px;
+      clear: both;
+    }
+  }
+}
+
+.node-product-node-teaser {
+  .field-type-image {
+    margin: 0 0 10px;
+    width: 100%;
+
+    img {
+      width: 228px;
+      height: 183px;
+    }
+  }
+  .field-name-field-product-price {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    clear: both;
+  }
+  .field-name-title {
+    text-align: center;
+    font-size: 10px;
+    clear: both;
+  }
+}

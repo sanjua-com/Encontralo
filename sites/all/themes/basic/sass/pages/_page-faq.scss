@@ -1,0 +1,50 @@
+.page-faq-page #main .container #content #content-area {
+  .faq-ul-questions-top {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 658px;
+    li {
+      width: 658px;
+      height: 78px;
+      border-bottom: 1px solid #ccc;
+      margin: 0;
+      list-style: none;
+      line-height: 78px;
+      padding-left: 40px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .faq-question {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 40px;
+    width: 658px;
+  }
+  .faq-answer {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 40px;
+    width: 658px;
+    .field-name-field-faq-category .field-label {
+      display: none;
+    }
+  }
+  .faq-question a {
+    color: #ccc;
+  }
+  .faq-answer {
+    a {
+      color: grey;
+    }
+    .first {
+      display: none;
+    }
+  }
+}

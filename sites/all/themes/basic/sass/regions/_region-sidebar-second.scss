@@ -1,0 +1,48 @@
+#sidebar-second {
+  margin-top: 124px;
+  width: 370px;
+  margin-left: 14px;
+
+  #block-user_contact-block .view-id-user_contact {
+    .views-field-picture img {
+      width: 130px;
+      height: 130px;
+      border: 1px solid grey;
+      border-radius: 50%;
+      margin: 20px 120px 20px 120px;
+    }
+    .views-field-name {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  #block-privatemsg_block_new {
+    label {
+      margin: 0 0 10px 20px;
+    }
+
+    .form-textarea-wrapper textarea {
+      display: block;
+      margin: 0 15px 0 15px;
+      width: 92%;
+      border: 1px solid #9E9E9E;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .fieldset-wrapper {
+      display: none;
+    }
+
+    .form-actions input {
+      width: 92%;
+      height: 42px;
+      margin: 0 15px 0 15px;
+      color: white;
+      background: #02b875;
+      border: 1px solid #02b875;
+      border-radius: 3px;
+    }
+  }
+}

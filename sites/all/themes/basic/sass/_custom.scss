@@ -8,3 +8,114 @@
 // Import variables and mixins to be used.
 @import "_config.sass";
 @import "_sprites.sass";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eceff1;
+}
+
+@import "blocks/_blocks";
+@import "blocks/_block-carousel";
+@import "nodes/_node-product";
+@import "regions/_region-header";
+@import "regions/_region-footer";
+@import "regions/_region-prefooter";
+@import "regions/_region-video";
+@import "regions/_region-sidebar-first";
+@import "regions/_region-sidebar-second";
+@import "pages/_page-taxonomy";
+@import "pages/_page-user";
+@import "pages/_page-faq";
+
+#main {
+  clear: both;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 93%;
+  }
+
+  #content #content-area {
+    .view-products {
+      .view-content {
+        border: 1px solid #02b875;
+        .field-name-field-product-image img {
+          float: left;
+          width: 144px;
+          height: 112px;
+          border: 1px solid #c0c0c0;
+          border-radius: 3px;
+        }
+        .group-left {
+          width: 18%;
+          float: left;
+        }
+      }
+      .field-name-field-featured {
+        background: #02b875;
+        width: 100px;
+        color: white;
+        border: 1px solid #02b875;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: 3px;
+      }
+      .view-content {
+        .field-name-title {
+          h2 {
+            width: 200px;
+            float: left;
+            margin: 0px 0 0 5px;
+          }
+          a {
+            color: #607d8b;
+            font-size: 25px;
+          }
+        }
+        .field-name-field-product-price .field-item {
+          float: left;
+          font-size: 25px;
+          margin: 30px 40px 0 0;
+          width: 100px;
+        }
+        .group-right {
+          width: 32%;
+          float: right;
+          .field-type-ds {
+            color: #607d8b;
+            font-size: 13px;
+            margin-top: 35px;
+          }
+        }
+        .views-row {
+          border-bottom: 1px solid #02b875;
+          padding: 10px 0 10px 10px;
+        }
+        .views-row-last {
+          border-bottom: 0;
+        }
+      }
+    }
+    .item-list .pager {
+      margin: 10px 20px 10px 20px;
+      .pager-current {
+        background: #607d8b;
+        border: 1px solid #607d8b;
+        border-radius: 19px;
+        color: #ffffff;
+        padding: 2px 6px;
+        font-size: 15px;
+      }
+      a {
+        color: #607d8b;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+
+

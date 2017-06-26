@@ -1,0 +1,26 @@
+#sidebar-first {
+  margin-top: 94px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  .views-exposed-form {
+    label {
+      margin: 10px;
+      text-align: center;
+    }
+    .views-widget select {
+      margin: 0 0 0 11px;
+    }
+  }
+  #block--exp-products-product_filter label {
+    margin: 10px 0 10px 0 20px;
+  }
+  #block--exp-products-block_1 input {
+    width: 80px;
+    height: 42px;
+    color: white;
+    background: #02b875;
+    border: 1px solid #02b875;
+    border-radius: 3px;
+    margin: 0 0 10px 100px;
+  }
+}
