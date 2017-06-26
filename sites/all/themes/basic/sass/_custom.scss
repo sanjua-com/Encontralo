@@ -9,13 +9,8 @@
 @import "_config.sass";
 @import "_sprites.sass";
 
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #eceff1;
-}
-
+// Customs files.
+@import "variables/_colors";
 @import "blocks/_blocks";
 @import "blocks/_block-carousel";
 @import "nodes/_node-product";
@@ -28,6 +23,13 @@ body {
 @import "pages/_page-taxonomy";
 @import "pages/_page-user";
 @import "pages/_page-faq";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-white;
+  color: $color-text;
+}
 
 #main {
   clear: both;
