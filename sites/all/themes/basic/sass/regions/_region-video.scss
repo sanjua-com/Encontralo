@@ -1,3 +1,31 @@
-.fullscreen-bg__video {
-  width: 100%;
+.fullscreen-bg {
+  position: relative;
+
+  .button-vender {
+    position: absolute;
+    bottom: 30px;
+    left: 42%;
+    z-index: 99;
+
+    a {
+      width: 200px;
+      font-size: 22px;
+      text-align: center;
+      color: white;
+      background-color: #0b97c4;
+      padding: 10px 30px;
+      border-radius: 5px;
+      display: block;line-height: 30px;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .fullscreen-bg__video {
+    width: 100%;
+    max-height: 400px;
+  }
 }

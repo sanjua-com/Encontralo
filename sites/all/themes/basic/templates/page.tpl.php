@@ -28,6 +28,9 @@
 
     <?php if (drupal_is_front_page()): ?>
     <div class="fullscreen-bg">
+        <div class="button-vender">
+            <?php print l('Vender', '/node/add/product'); ?>
+        </div>
         <video loop muted autoplay class="fullscreen-bg__video">
             <source src="<?php print file_create_url(variable_get('sanjua_home_video_url')) ?>" type="video/mp4">
         </video>
