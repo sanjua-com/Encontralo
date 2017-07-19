@@ -6,14 +6,42 @@
 function sanjua_menu(){
 	$items = array();
 
-  $items['settings'] = array(
+  $items['admin/config/custom-settings'] = array(
     'title' => t('General Settings'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('sanjua_settings_form'),
     'access callback' => TRUE,
-		'access arguments' => array('access administration pages'),
-		'file' => 'sanjua.admin.inc',
+    'access arguments' => array('access administration pages'),
+    'file' => 'sanjua.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
   );
 
   return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function sanjua_permission() {
+  return array(
+    'access pages content' => array(
+      'title' => t('Permissions for edit settings custom.'),
+    )
+  );
+}
+
+function sanjua_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+
+  if ($form_id == 'product_node_form') {	
+    if (in_array('Cliente', array_values($user->roles))) {
+      $options = array(
+	'normal' => 'Normal',
+        'premium' => 'Premium',
+      );
+
+      // Alter form
+      $form['field_product_type'][LANGUAGE_NONE]['#options'] = $options;
+    }  
+  }
 }

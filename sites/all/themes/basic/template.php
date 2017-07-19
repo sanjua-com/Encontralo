@@ -156,6 +156,47 @@ function basic_preprocess_node(&$variables) {
   if (!empty($node->classes_array)) {
     $variables['classes_array'] = array_merge($variables['classes_array'], $node->classes_array);
   }
+
+  // We check if the user is viewing the node/page in it's full view
+  if ($variables['view_mode'] == 'full' && $variables['type'] == 'shop') {
+    // Get the node object to be used later
+    $node = node_load($variables['nid']);
+
+    $field = field_get_items('node', $node, 'field_shop_color_background');
+    $field_header = field_get_items('node', $node, 'field_shop_color_header');
+    $field_enlace = field_get_items('node', $node, 'field_shop_color_enlaces');
+
+    // Check if the field has a value
+    if ($field) {
+      $color = $field[0]['rgb'];
+      /**
+       * We specify the type to inline and group so it would override any style.
+       */
+      drupal_add_css("#main { background: {$color}; }", 
+        array('type' => 'inline', 'group' => CSS_THEME)
+      );
+    }
+
+    if ($field_header) {
+      $color_header = $field_header[0]['rgb'];
+      /**
+       * We specify the type to inline and group so it would override any style.
+       */
+      drupal_add_css("header#header { background: {$color_header}; }",
+        array('type' => 'inline', 'group' => CSS_THEME)
+      );
+    }
+
+    if ($field_enlace) {
+      $color_enlace = $field_enlace[0]['rgb'];
+      /**
+       * We specify the type to inline and group so it would override any style.
+       */
+      drupal_add_css("#main a { color: {$color_enlace}; }",
+        array('type' => 'inline', 'group' => CSS_THEME)
+      );
+    }
+  }
 }
 
 /**
