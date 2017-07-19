@@ -23,20 +23,51 @@
 @import "pages/_page-taxonomy";
 @import "pages/_page-user";
 @import "pages/_page-faq";
+@import "view_modes/_view-mode-teaser.node-product";
 
 body {
   margin: 0;
   padding: 0;
   background: $color-white;
   color: $color-text;
+
+  &.admin-menu {
+    #page {
+      margin-top: 30px;
+    }
+  }
 }
 
 #main {
   clear: both;
+
+  #highlighted {
+    margin: 10px auto;
+    max-width: 1200px;
+
+    ul {
+      background: #2B2B2B;
+      border-bottom: 1px solid #999999;
+      border-top: 1px solid #999999;
+      padding: 10px;
+      overflow: hidden;
+      
+      li {
+        float: left;
+        list-style: none;
+        padding: 0 10px;
+
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 93%;
+    max-width: 1200px;
   }
 
   #content #content-area {

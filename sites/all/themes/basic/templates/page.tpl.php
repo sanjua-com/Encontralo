@@ -29,15 +29,16 @@
     <?php if (drupal_is_front_page()): ?>
     <div class="fullscreen-bg">
         <video loop muted autoplay class="fullscreen-bg__video">
-            <source src="video/big_buck_bunny.webm" type="video/webm">
             <source src="<?php print file_create_url(variable_get('sanjua_home_video_url')) ?>" type="video/mp4">
-            <source src="video/big_buck_bunny.ogv" type="video/ogg">
         </video>
     </div>
     <?php endif; ?>
     <!-- ______________________ MAIN _______________________ -->
 
     <div id="main">
+        <?php if ($page['highlighted']): ?>
+            <div id="highlighted"><?php print render($page['highlighted']) ?></div>
+        <?php endif; ?>
         <div class="container">
             <section id="content">
 
@@ -46,9 +47,6 @@
 
                 <?php print $breadcrumb; ?>
 
-                <?php if ($page['highlighted']): ?>
-                      <div id="highlighted"><?php print render($page['highlighted']) ?></div>
-                <?php endif; ?>
 
                 <?php print render($title_prefix); ?>
 

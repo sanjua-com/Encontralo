@@ -2,6 +2,8 @@
 #block-featured_products-block_1,
 #block-featured_products-block_2,
 #block-featured_products-block_3 {
+  overflow: hidden;
+
   .view-content {
     .jcarousel-container {
       width: 100%;
@@ -10,12 +12,14 @@
       .jcarousel-clip {
         width: 100%;
         height: inherit;
+        margin: 0 auto;
 
-        ul {
+        ul.jcarousel {
           width: 100%;
 
-          li {
+          > li {
             width: 24%;
+            border: 0;
             height: inherit;
             min-height: 280px;
           }
