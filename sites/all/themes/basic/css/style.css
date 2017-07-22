@@ -578,7 +578,41 @@ header#header .container img {
 }
 header#header .container #logo {
   float: left;
-  margin: 13px 116px 10px 0;
+  margin: 13px 30px 10px 0;
+}
+header#header .container #menu-category {
+  width: 110px;
+  float: left;
+  display: block;
+  padding: 23px 0 0 0;
+}
+header#header .container #menu-category .icon-category a {
+  display: block;
+  color: #FFF;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+}
+header#header .container #menu-category .icon-category a .menu-categories {
+  display: none;
+  background-color: white;
+  padding: 15px 20px;
+  width: 720px;
+  border-radius: 10px;
+  border: 1px solid #8F8F8F;
+  position: absolute;
+  z-index: 999;
+}
+header#header .container #menu-category .icon-category a .menu-categories a {
+  color: #1a2c51;
+  padding: 4px 5px;
+  font-size: 12px;
+}
+header#header .container #menu-category .icon-category a:hover {
+  text-decoration: underline;
+}
+header#header .container #menu-category .icon-category a:hover .menu-categories {
+  display: block;
 }
 header#header .container #site-name {
   float: left;
@@ -597,14 +631,14 @@ header#header .container #header-region #block--exp-products-page {
 header#header .container #header-region #block--exp-products-page .views-exposed-widget {
   padding: 0;
 }
-header#header .container #header-region #block--exp-products-page .views-exposed-widget #edit-title {
+header#header .container #header-region #block--exp-products-page .views-exposed-widget input.form-text {
   width: 406px;
   height: 46px;
   border: 0;
   margin: 0;
   border-radius: 12px 0 0 12px;
 }
-header#header .container #header-region #block--exp-products-page .views-exposed-widget .form-submit {
+header#header .container #header-region #block--exp-products-page .views-exposed-widget input.form-submit {
   width: 55px;
   height: 46px;
   margin: 0;
@@ -982,6 +1016,43 @@ header#header .container #header-region #block-user-menu .buy {
   display: none;
 }
 
+.page-node-add-product #main #content h1.title,
+.page-node-add-product #main #content .breadcrumb {
+  display: none;
+}
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file label {
+  display: none;
+}
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file .image-widget-data input.form-file {
+  text-indent: -500em;
+  width: 120px;
+  height: 120px;
+  background: url("../images/icon_image.png") no-repeat 0 -16px;
+  color: transparent;
+  cursor: pointer;
+}
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file .image-widget-data input.form-submit {
+  padding: 5px 15px;
+  border: 0;
+  background-color: #FF8230;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file .description {
+  display: none;
+}
+.page-node-add-product #main #content form.node-product-form .field-name-field-related-shop,
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-pay,
+.page-node-add-product #main #content form.node-product-form .field-name-field-product-type {
+  display: none;
+}
+.page-node-add-product #main #content form.node-product-form .form-actions .form-submit {
+  padding: 5px 15px;
+  border: 0;
+  background-color: #FF8230;
+  color: #FFFFFF;
+}
+
 .view-mode-teaser.node-product {
   width: 250px;
   border: 1px solid #DDD;
@@ -1016,6 +1087,9 @@ body {
 }
 body.admin-menu #page {
   margin-top: 30px;
+}
+body::before {
+  background-image: none;
 }
 
 #main {

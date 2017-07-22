@@ -14,7 +14,49 @@ header#header {
 
     #logo {
       float: left;
-      margin: 13px 116px 10px 0;
+      margin: 13px 30px 10px 0;
+    }
+
+    #menu-category {
+      width: 110px;
+      float: left;
+      display: block;
+      padding: 23px 0 0 0;
+
+      .icon-category {
+        a {
+          display: block;
+          color: #FFF;
+          height: 20px;
+          line-height: 20px;
+          position: relative;
+
+          .menu-categories {
+            display: none;
+            background-color: white;
+            padding: 15px 20px;
+            width: 720px;
+            border-radius: 10px;
+            border: 1px solid #8F8F8F;
+            position: absolute;
+            z-index: 999;
+
+            a {
+              color: #1a2c51;
+              padding: 4px 5px;
+              font-size: 12px;
+            }
+          }
+
+          &:hover {
+            text-decoration: underline;
+
+            .menu-categories {
+              display: block;
+            }
+          }
+        }
+      }
     }
 
     #site-name {
@@ -35,7 +77,7 @@ header#header {
         .views-exposed-widget {
           padding:  0;
 
-          #edit-title {
+          input.form-text {
             width: 406px;
             height: 46px;
             border: 0;
@@ -43,7 +85,7 @@ header#header {
             border-radius: 12px 0 0 12px;
           }
 
-          .form-submit {
+          input.form-submit {
             width: 55px;
             height: 46px;
             margin: 0;

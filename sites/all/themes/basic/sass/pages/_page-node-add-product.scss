@@ -1,0 +1,58 @@
+.page-node-add-product {
+  #main {
+    #content {
+      h1.title,
+      .breadcrumb {
+        display: none;
+      }
+
+      form.node-product-form {
+        .field-name-field-product-image {
+          .form-type-managed-file {
+            label {
+              display: none;
+            }
+
+            .image-widget-data {
+              input.form-file {
+                text-indent: -500em;
+                width: 120px;
+                height: 120px;
+                background: url("../images/icon_image.png") no-repeat 0 -16px;
+                color: transparent;
+                cursor: pointer;
+              }
+
+              input.form-submit {
+                padding: 5px 15px;
+                border: 0;
+                background-color: #FF8230;
+                color: #FFFFFF;
+                margin-left: 20px;
+              }
+            }
+
+            .description {
+              display: none;
+            }
+          }
+        }
+
+        .field-name-field-related-shop,
+        .field-name-field-product-pay,
+        .field-name-field-product-type {
+          display: none;
+        }
+
+        .form-actions {
+          .form-submit {
+            padding: 5px 15px;
+            border: 0;
+            background-color: #FF8230;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

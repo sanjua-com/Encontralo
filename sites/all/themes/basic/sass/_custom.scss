@@ -23,6 +23,7 @@
 @import "pages/_page-taxonomy";
 @import "pages/_page-user";
 @import "pages/_page-faq";
+@import "pages/_page-node-add-product";
 @import "view_modes/_view-mode-teaser.node-product";
 
 body {
@@ -35,6 +36,10 @@ body {
     #page {
       margin-top: 30px;
     }
+  }
+
+  &::before {
+    background-image: none;
   }
 }
 

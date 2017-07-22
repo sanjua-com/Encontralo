@@ -18,6 +18,15 @@
               </a>
           <?php endif; ?>
 
+          <div id="menu-category">
+              <div class="icon-category"><a href="#">
+                      <span>Categorías</span>
+                      <div class="menu-categories">
+                        <?php print views_embed_view('categories_header', 'block'); ?>
+                      </div>
+                  </a></div>
+          </div>
+
           <?php if ($page['header']): ?>
               <div id="header-region">
                 <?php print render($page['header']); ?>
