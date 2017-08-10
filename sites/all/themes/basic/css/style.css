@@ -835,6 +835,14 @@ header#header .container #header-region #block-user-menu .buy {
   border-radius: 3px;
 }
 
+.page-destacar-aviso .form-radios .form-type-radio {
+  padding: 20px 0;
+}
+.page-destacar-aviso .form-radios .form-type-radio label span {
+  display: inline-block;
+  width: 30%;
+}
+
 .page-taxonomy #content #content-area {
   border: 1px solid #02b875;
 }
@@ -1051,6 +1059,10 @@ header#header .container #header-region #block-user-menu .buy {
   border: 0;
   background-color: #FF8230;
   color: #FFFFFF;
+}
+.page-node-add-product #main #content form.node-product-form .fieldset-vehiculos,
+.page-node-add-product #main #content form.node-product-form .fieldset-propiedades {
+  display: none;
 }
 
 .view-mode-teaser.node-product {

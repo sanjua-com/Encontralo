@@ -36,12 +36,74 @@ function sanjua_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'product_node_form') {	
     if (in_array('Cliente', array_values($user->roles))) {
       $options = array(
-	'normal' => 'Normal',
+	      'normal' => 'Normal',
         'premium' => 'Premium',
       );
 
       // Alter form
       $form['field_product_type'][LANGUAGE_NONE]['#options'] = $options;
-    }  
+    }
+  }
+}
+
+
+/**
+ * Implements hook_ds_fields_info().
+ */
+function sanjua_ds_fields_info($entity_type) {
+
+  $fields = array();
+
+  // Define logo field.
+  $fields['node']['featured'] = array(
+    'title' => t('(custom) Featured button'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'ui_limit' => array('product|*'),
+    'function' => '_sanjua_custom_featured_button',
+  );
+
+  if (isset($fields[$entity_type])) {
+    return array($entity_type => $fields[$entity_type]);
+  }
+}
+
+/**
+ * Button for to featured product.
+ */
+function _sanjua_custom_featured_button($field) {
+  global $user;
+
+  $output = '';
+  $node = $field['entity'];
+
+  if ($user->uid == $node->uid) {
+    $url = 'destacar-aviso/' . $node->nid;
+    $output = l('Destacar aviso', $url);
+  }
+
+  return $output;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function sanjua_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_state) {
+  $product = $form_state['default_product'];
+
+  //dpm($form['product_id']);
+  if ($form['#form_id'] == 'commerce_cart_add_to_cart_form_3_5_4') {
+    // over its #options array and sanitizing the values.
+    foreach ($form['product_id']['#options'] as $key => $value) {
+      $product = commerce_product_load($key);
+      $duration = $product->field_durate[LANGUAGE_NONE][0]['value'];
+      $prices = field_get_items('commerce_product', $product, 'commerce_price');
+      $price = number_format(($prices[0]['amount']/100),2);
+
+      $label = '<span>' . $value . '</span><span>Visible durante ' . $duration . ' dias</span><span>Precio: $' . $price . '</span>';
+
+      $form['product_id']['#options'][$key] = $label;
+    }
+
+    $form['product_id']['#type'] = 'radios';
   }
 }
