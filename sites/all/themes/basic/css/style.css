@@ -1040,11 +1040,7 @@ header#header .container #header-region #block-user-menu .buy {
   cursor: pointer;
 }
 .page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file .image-widget-data input.form-submit {
-  padding: 5px 15px;
-  border: 0;
-  background-color: #FF8230;
-  color: #FFFFFF;
-  margin-left: 20px;
+  display: none;
 }
 .page-node-add-product #main #content form.node-product-form .field-name-field-product-image .form-type-managed-file .description {
   display: none;
@@ -1067,7 +1063,7 @@ header#header .container #header-region #block-user-menu .buy {
 
 .view-mode-teaser.node-product {
   width: 250px;
-  border: 1px solid #DDD;
+  border: 1px solid #8F8F8F;
   margin: 0 auto;
   padding: 0 0 10px;
 }

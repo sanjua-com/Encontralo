@@ -43,6 +43,8 @@ function sanjua_form_alter(&$form, &$form_state, $form_id) {
       // Alter form
       $form['field_product_type'][LANGUAGE_NONE]['#options'] = $options;
     }
+
+    $form['actions']['submit']['#value'] = t('Publicar');
   }
 }
 

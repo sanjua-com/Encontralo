@@ -33,4 +33,12 @@
     }
   };
 
+  Drupal.behaviors.autoUpload = {
+    attach: function (context, settings) {
+      jQuery('form', context).delegate('input.form-file', 'change', function() {
+        jQuery(this).next('input[type="submit"]').mousedown();
+      });
+    }
+  };
+
 } (jQuery));

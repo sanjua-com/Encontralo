@@ -33,4 +33,32 @@
     }
   };
 
+  Drupal.behaviors.hidden = {
+
+    attach: function (context, settings) {
+
+      $('.hierarchical-select select:first-child').change(function(){
+        if($(this).val() == 5){ // or this.value == 'volvo'
+          $('.fieldset-vehiculos').show();
+          $('.fieldset-propiedades').hide();
+        }
+        else if($(this).val() == 6){ // or this.value == 'volvo'
+          $('.fieldset-propiedades').show();
+          $('.fieldset-vehiculos').hide();
+        } else {
+          $('.fieldset-vehiculos').hide();
+          $('.fieldset-propiedades').hide();
+        }
+      });
+    }
+  };
+
+  Drupal.behaviors.autoUpload = {
+    attach: function (context, settings) {
+      $('form', context).delegate('input.form-file', 'change', function() {
+        $(this).next('input[type="submit"]').mousedown();
+      });
+    }
+  };
+
 } (jQuery, Drupal, this, this.document));
