@@ -17,7 +17,7 @@
 
     attach: function (context, settings) {
 
-      jQuery('.hierarchical-select select:first-child').change(function(){
+      jQuery('.field-name-field-product-category .hierarchical-select select:first-child').change(function(){
         if(jQuery(this).val() == 5){ // or this.value == 'volvo'
           jQuery('.fieldset-vehiculos').show();
           jQuery('.fieldset-propiedades').hide();
@@ -30,6 +30,12 @@
           jQuery('.fieldset-propiedades').hide();
         }
       });
+    }
+  };
+
+  Drupal.behaviors.hideLogin = {
+    attach: function (context, settings) {
+        jQuery('.logged-in .mid-884').hide();
     }
   };
 

@@ -665,6 +665,24 @@ header#header .container #header-region #block-user-menu ul li a {
 header#header .container #header-region #block-user-menu ul li.last {
   border-right: 0;
 }
+header#header .container #header-region #block-user-menu ul li.expanded {
+  list-style: none;
+  position: relative;
+}
+header#header .container #header-region #block-user-menu ul li.expanded ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: white;
+  padding: 10px;
+  z-index: 999;
+}
+header#header .container #header-region #block-user-menu ul li.expanded:hover ul {
+  display: block;
+}
+header#header .container #header-region #block-user-menu ul li.expanded:hover ul li a {
+  color: black;
+}
 header#header .container #header-region #block-user-menu .ayuda a {
   border-right: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
@@ -1107,20 +1125,29 @@ body::before {
   margin: 10px auto;
   max-width: 1200px;
 }
-#main #highlighted ul {
+#main #highlighted #block-menu-my-menu > ul,
+#main #highlighted #block-main-menu > ul {
   background: #2B2B2B;
   border-bottom: 1px solid #999999;
   border-top: 1px solid #999999;
   padding: 10px;
   overflow: hidden;
 }
-#main #highlighted ul li {
+#main #highlighted #block-menu-my-menu > ul > li,
+#main #highlighted #block-main-menu > ul > li {
   float: left;
   list-style: none;
   padding: 0 10px;
 }
-#main #highlighted ul li a {
+#main #highlighted #block-menu-my-menu > ul > li a,
+#main #highlighted #block-main-menu > ul > li a {
   color: #FFF;
+}
+#main #highlighted #block-menu-my-menu {
+  margin-top: 15px;
+}
+#main #highlighted #block-menu-my-menu > ul {
+  background: #FF8230;
 }
 #main .container {
   margin-left: auto;

@@ -51,21 +51,32 @@ body {
     margin: 10px auto;
     max-width: 1200px;
 
-    ul {
-      background: #2B2B2B;
-      border-bottom: 1px solid #999999;
-      border-top: 1px solid #999999;
-      padding: 10px;
-      overflow: hidden;
-      
-      li {
-        float: left;
-        list-style: none;
-        padding: 0 10px;
+    #block-menu-my-menu,
+    #block-main-menu {
+      > ul {
+        background: #2B2B2B;
+        border-bottom: 1px solid #999999;
+        border-top: 1px solid #999999;
+        padding: 10px;
+        overflow: hidden;
 
-        a {
-          color: #FFF;
+        > li {
+          float: left;
+          list-style: none;
+          padding: 0 10px;
+
+          a {
+            color: #FFF;
+          }
         }
+      }
+    }
+
+    #block-menu-my-menu {
+      margin-top: 15px;
+
+      > ul {
+        background: #FF8230;
       }
     }
   }

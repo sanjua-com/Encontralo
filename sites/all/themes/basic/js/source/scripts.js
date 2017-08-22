@@ -37,12 +37,12 @@
 
     attach: function (context, settings) {
 
-      $('.hierarchical-select select:first-child').change(function(){
-        if($(this).val() == 5){ // or this.value == 'volvo'
+      $('.field-name-field-product-category .hierarchical-select select:first-child').change(function(){
+        if($(this).val() == 5){ // or this.value == 'vehiculos'
           $('.fieldset-vehiculos').show();
           $('.fieldset-propiedades').hide();
         }
-        else if($(this).val() == 6){ // or this.value == 'volvo'
+        else if($(this).val() == 6){ // or this.value == 'propiedades'
           $('.fieldset-propiedades').show();
           $('.fieldset-vehiculos').hide();
         } else {
