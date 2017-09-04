@@ -33,7 +33,7 @@ function sanjua_permission() {
 function sanjua_form_alter(&$form, &$form_state, $form_id) {
   global $user;
 
-  if ($form_id == 'product_node_form') {	
+  if ($form_id == 'product_node_form') {
     if (in_array('Cliente', array_values($user->roles))) {
       $options = array(
 	      'normal' => 'Normal',
