@@ -109,3 +109,53 @@ function sanjua_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_state) 
     $form['product_id']['#type'] = 'radios';
   }
 }
+
+function sanjua_block_info() {
+  // This example comes from node.module.
+  $blocks['user_profile'] = array(
+    'info' => t('User block'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  return $blocks;
+}
+
+function sanjua_block_view($delta = '') {
+  // This example is adapted from node.module.
+  $block = array();
+
+  switch ($delta) {
+    case 'user_profile':
+      $block['content'] = _sanjua_user_profile();
+      break;
+  }
+  return $block;
+}
+
+function _sanjua_user_profile() {
+  $id = arg(1);
+
+  $node = node_load($id);
+  $user = user_load($node->uid);
+
+  $name = $user->field_profie_firstname[LANGUAGE_NONE][0]['value'] . ' ' . $user->field_profile_lastname[LANGUAGE_NONE][0]['value'];
+
+  $nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('n.uid', $user->uid)
+    ->condition('n.type', 'product')
+    ->condition('n.status', 1)
+    ->execute()
+    ->fetchCol();
+
+  $qty = count($nids);
+  $image = theme('image_style', array('style_name' => 'thumbnail', 'path' => $user->picture->uri));
+
+  $output = '';
+  $output .= '<div class="image">' . $image . '</div>';
+  $output .= '<div class="names">' . $name . '</div>';
+  $output .= '<div class="qty">' . $qty . ' productos</div>';
+
+
+  return $output;
+}
